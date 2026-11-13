@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>後台</title>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/admin.css">
+</head>
+<body class="admin">
+<header class="abar">
+  <b>後台</b>
+  <nav id="tabs" hidden>
+    <a href="#posts" data-tab="posts">文章</a>
+    <a href="#profile" data-tab="profile">個人頁面</a>
+    <a href="#albums" data-tab="albums">相簿</a>
+    <a href="#tags" data-tab="tags">關鍵字</a>
+    <a href="#settings" data-tab="settings">設定</a>
+  </nav>
+  <a class="tosite" href="./">看網站 ↗</a>
+</header>
+<main class="awrap" id="app"><p class="loading">載入中…</p></main>
+<div class="toast" id="toast" hidden></div>
+<input type="file" id="filepick" accept="image/*" multiple hidden>
+<script src="assets/common.js"></script>
+<script src="assets/admin.js"></script>
+</body>
+</html>
