@@ -1,3 +1,6 @@
+/* 手寫字型會把「温」畫成「溫」：這幾個字改用系統字型顯示，確保字是對的 */
+@font-face { font-family: "CharFix"; src: local("Microsoft JhengHei"), local("Microsoft JhengHei UI"), local("PingFang TC"), local("Noto Sans TC"), local("Noto Sans CJK TC"), local("Heiti TC"); unicode-range: U+6E29; }
+@font-face { font-family: "CharFix"; font-weight: 700; src: local("Microsoft JhengHei Bold"), local("Microsoft JhengHei UI Bold"), local("PingFang TC Semibold"), local("Noto Sans TC Bold"), local("Noto Sans CJK TC Bold"), local("Heiti TC Medium"); unicode-range: U+6E29; }
 :root {
   --paper: #f6efe3;
   --card: #fffbf4;
@@ -9,7 +12,7 @@
   --sage: #5f8163;
   --sage-soft: #e2ebdc;
   --mustard: #d9a441;
-  --hand: "LXGW WenKai TC", "Klee One", "BiauKai", "DFKai-SB", "PingFang TC", "Microsoft JhengHei", serif;
+  --hand: "CharFix", "LXGW WenKai TC", "Klee One", "BiauKai", "DFKai-SB", "PingFang TC", "Microsoft JhengHei", serif;
   --body: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Heiti TC", system-ui, sans-serif;
   --radius: 14px;
 }
